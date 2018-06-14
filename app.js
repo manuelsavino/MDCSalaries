@@ -22,15 +22,15 @@ $(function(){
     }).then(function(response){
         console.log(response)
 
-        for(i= 0; i < responce.length; i++)
+        for(i= 0; i < response.length; i++)
         {
             $("#tbody").append(
             $("<tr>")
-            .append($("<td>").append(responce[i].firstname))
-            .append($("<td>").append(responce[i].lastname))
-            .append($("<td>").append(responce[i].deptname))
-            .append($("<td>").append(responce[i].title))
-            .append($("<td>").append("$"+responce[i].annualsalary))
+            .append($("<td>").append(response[i].firstname))
+            .append($("<td>").append(response[i].lastname))
+            .append($("<td>").append(response[i].deptname))
+            .append($("<td>").append(response[i].title))
+            .append($("<td>").append("$"+response[i].annualsalary))
             )
 
         }
